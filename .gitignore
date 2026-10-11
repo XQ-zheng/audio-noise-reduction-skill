@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+work/
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.processing.json
+.env
+*.token
+checkpoints/

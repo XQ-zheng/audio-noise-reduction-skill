@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audio-noise-reduction-skill"
+version = "1.0.0"
+description = "Speech-preserving audio cleanup skill and CLI for local agent runtimes"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "XQ-zheng"}]
+dependencies = ["numpy>=1.24", "scipy>=1.10", "soundfile>=0.12"]
+
+[project.optional-dependencies]
+pitch = ["librosa>=0.10"]
+clearvoice = ["clearvoice"]
+
+[project.scripts]
+audio = "audio_noise_reduction.audio_command:main"
+
+[project.urls]
+Repository = "https://github.com/XQ-zheng/audio-noise-reduction-skill"
+
+[tool.setuptools]
+packages = ["audio_noise_reduction"]
+package-dir = {audio_noise_reduction = "scripts"}

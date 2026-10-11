@@ -1,0 +1,4 @@
+interface:
+  display_name: "保真人声除杂"
+  short_description: "保留主要说话人，抑制环境噪声与其他人声，并检查音高、频谱和音量变化"
+  default_prompt: "使用 $audio-noise-reduction-skill 清理这段音频，默认保留主要或离麦克风最近的说话人，优先保护原始人声。"
